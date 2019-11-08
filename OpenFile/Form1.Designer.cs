@@ -28,30 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing); //这里注册个窗体关闭事件
+
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button3 = new System.Windows.Forms.Button();
             this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button4 = new System.Windows.Forms.Button();
             this.contextMenuStrip4 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button5 = new System.Windows.Forms.Button();
             this.contextMenuStrip5 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button6 = new System.Windows.Forms.Button();
             this.contextMenuStrip6 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button7 = new System.Windows.Forms.Button();
             this.contextMenuStrip7 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button8 = new System.Windows.Forms.Button();
             this.contextMenuStrip8 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button9 = new System.Windows.Forms.Button();
             this.contextMenuStrip9 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button10 = new System.Windows.Forms.Button();
             this.contextMenuStrip10 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button11 = new System.Windows.Forms.Button();
             this.contextMenuStrip11 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.button12 = new System.Windows.Forms.Button();
             this.contextMenuStrip12 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
@@ -66,6 +68,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
             // button2
             // 
             this.button2.ContextMenuStrip = this.contextMenuStrip2;
@@ -76,6 +84,12 @@
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip2.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip2_Opening);
             // 
             // button3
             // 
@@ -88,6 +102,12 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // contextMenuStrip3
+            // 
+            this.contextMenuStrip3.Name = "contextMenuStrip3";
+            this.contextMenuStrip3.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip3.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip3_Opening);
+            // 
             // button4
             // 
             this.button4.ContextMenuStrip = this.contextMenuStrip4;
@@ -98,6 +118,12 @@
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // contextMenuStrip4
+            // 
+            this.contextMenuStrip4.Name = "contextMenuStrip4";
+            this.contextMenuStrip4.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip4.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip4_Opening);
             // 
             // button5
             // 
@@ -110,6 +136,12 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // contextMenuStrip5
+            // 
+            this.contextMenuStrip5.Name = "contextMenuStrip5";
+            this.contextMenuStrip5.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip5.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip5_Opening);
+            // 
             // button6
             // 
             this.button6.ContextMenuStrip = this.contextMenuStrip6;
@@ -120,6 +152,12 @@
             this.button6.Text = "button6";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // contextMenuStrip6
+            // 
+            this.contextMenuStrip6.Name = "contextMenuStrip6";
+            this.contextMenuStrip6.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip6.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip6_Opening);
             // 
             // button7
             // 
@@ -132,6 +170,12 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // contextMenuStrip7
+            // 
+            this.contextMenuStrip7.Name = "contextMenuStrip7";
+            this.contextMenuStrip7.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip7.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip7_Opening);
+            // 
             // button8
             // 
             this.button8.ContextMenuStrip = this.contextMenuStrip8;
@@ -142,6 +186,12 @@
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // contextMenuStrip8
+            // 
+            this.contextMenuStrip8.Name = "contextMenuStrip8";
+            this.contextMenuStrip8.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip8.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip8_Opening);
             // 
             // button9
             // 
@@ -154,6 +204,12 @@
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // contextMenuStrip9
+            // 
+            this.contextMenuStrip9.Name = "contextMenuStrip9";
+            this.contextMenuStrip9.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip9.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip9_Opening);
+            // 
             // button10
             // 
             this.button10.ContextMenuStrip = this.contextMenuStrip10;
@@ -164,6 +220,12 @@
             this.button10.Text = "button10";
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // contextMenuStrip10
+            // 
+            this.contextMenuStrip10.Name = "contextMenuStrip10";
+            this.contextMenuStrip10.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip10.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip10_Opening);
             // 
             // button11
             // 
@@ -176,6 +238,12 @@
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
+            // contextMenuStrip11
+            // 
+            this.contextMenuStrip11.Name = "contextMenuStrip11";
+            this.contextMenuStrip11.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip11.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip11_Opening);
+            // 
             // button12
             // 
             this.button12.ContextMenuStrip = this.contextMenuStrip12;
@@ -187,83 +255,17 @@
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
-            // 
-            // contextMenuStrip2
-            // 
-            this.contextMenuStrip2.Name = "contextMenuStrip2";
-            this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip2.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip2_Opening);
-            // 
-            // contextMenuStrip3
-            // 
-            this.contextMenuStrip3.Name = "contextMenuStrip3";
-            this.contextMenuStrip3.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip3.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip3_Opening);
-            // 
-            // contextMenuStrip4
-            // 
-            this.contextMenuStrip4.Name = "contextMenuStrip4";
-            this.contextMenuStrip4.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip4.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip4_Opening);
-            // 
-            // contextMenuStrip5
-            // 
-            this.contextMenuStrip5.Name = "contextMenuStrip5";
-            this.contextMenuStrip5.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip5.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip5_Opening);
-            // 
-            // contextMenuStrip6
-            // 
-            this.contextMenuStrip6.Name = "contextMenuStrip6";
-            this.contextMenuStrip6.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip6.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip6_Opening);
-            // 
-            // contextMenuStrip7
-            // 
-            this.contextMenuStrip7.Name = "contextMenuStrip7";
-            this.contextMenuStrip7.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip7.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip7_Opening);
-            // 
-            // contextMenuStrip8
-            // 
-            this.contextMenuStrip8.Name = "contextMenuStrip8";
-            this.contextMenuStrip8.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip8.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip8_Opening);
-            // 
-            // contextMenuStrip9
-            // 
-            this.contextMenuStrip9.Name = "contextMenuStrip9";
-            this.contextMenuStrip9.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip9.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip9_Opening);
-            // 
-            // contextMenuStrip10
-            // 
-            this.contextMenuStrip10.Name = "contextMenuStrip10";
-            this.contextMenuStrip10.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip10.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip10_Opening);
-            // 
-            // contextMenuStrip11
-            // 
-            this.contextMenuStrip11.Name = "contextMenuStrip11";
-            this.contextMenuStrip11.Size = new System.Drawing.Size(61, 4);
-            this.contextMenuStrip11.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip11_Opening);
-            // 
             // contextMenuStrip12
             // 
             this.contextMenuStrip12.Name = "contextMenuStrip12";
-            this.contextMenuStrip12.Size = new System.Drawing.Size(181, 26);
+            this.contextMenuStrip12.Size = new System.Drawing.Size(61, 4);
             this.contextMenuStrip12.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip12_Opening);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 489);
+            this.ClientSize = new System.Drawing.Size(444, 196);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
@@ -308,6 +310,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip12;
+
     }
 }
 
