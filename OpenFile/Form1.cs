@@ -27,20 +27,51 @@ namespace OpenFile
 
         #region 读取和保存配置文件
         private void Form1_Load()
-
         {
             path1 = Settings.Default.path1;
             path2 = Settings.Default.path2;
+            path3 = Settings.Default.path3;
+            path4 = Settings.Default.path4;
+            path5 = Settings.Default.path5;
+            path6 = Settings.Default.path6;
+            path7 = Settings.Default.path7;
+            path8 = Settings.Default.path8;
+            path9 = Settings.Default.path9;
+            path10 = Settings.Default.path10;
+            path11 = Settings.Default.path11;
+            path12 = Settings.Default.path12;
         }
         
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
-
         {
             Settings.Default.path1 = path1;
             Settings.Default.path2 = path2;
+            Settings.Default.path3 = path3;
+            Settings.Default.path4 = path4;
+            Settings.Default.path5 = path5;
+            Settings.Default.path6 = path6;
+            Settings.Default.path7 = path7;
+            Settings.Default.path8 = path8;
+            Settings.Default.path9 = path9;
+            Settings.Default.path10 = path10;
+            Settings.Default.path11 = path11;
+            Settings.Default.path12 = path12;
             Settings.Default.Save();
         }
         #endregion
+
+        //#region 设置快捷键
+        //protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        //{
+        //    // 按快捷键Ctrl+S执行按钮的点击事件方法
+        //    if (keyData == (Keys)Shortcut.CtrlS)
+        //    {
+        //        button1.PerformClick();
+        //        return true;
+        //    }
+        //    return base.ProcessCmdKey(ref msg, keyData); // 其他键按默认处理　
+        //}
+        //#endregion
 
         #region button事件设置（左键）
         private void button1_Click(object sender, EventArgs e)
@@ -51,67 +82,67 @@ namespace OpenFile
 
         private void button2_Click(object sender, EventArgs e)
         {
-            path1 = @path2.Replace(@"\", "/"); 
+            path2 = @path2.Replace(@"\", "/"); 
             Process.Start(path2);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            path1 = @path3.Replace(@"\", "/");
+            path3 = @path3.Replace(@"\", "/");
             Process.Start(path3);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            path1 = @path4.Replace(@"\", "/");
+            path4 = @path4.Replace(@"\", "/");
             Process.Start(path4);
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            path1 = @path5.Replace(@"\", "/");
+            path5 = @path5.Replace(@"\", "/");
             Process.Start(path5);
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            path1 = @path6.Replace(@"\", "/");
+            path6 = @path6.Replace(@"\", "/");
             Process.Start(path6);
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            path1 = @path7.Replace(@"\", "/");
+            path7 = @path7.Replace(@"\", "/");
             Process.Start(path7);
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            path1 = @path8.Replace(@"\", "/");
+            path8 = @path8.Replace(@"\", "/");
             Process.Start(path8);
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            path1 = @path9.Replace(@"\", "/");
+            path9 = @path9.Replace(@"\", "/");
             Process.Start(path9);
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            path1 = @path10.Replace(@"\", "/");
+            path10 = @path10.Replace(@"\", "/");
             Process.Start(path10);
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            path1 = @path11.Replace(@"\", "/");
+            path11 = @path11.Replace(@"\", "/");
             Process.Start(path11);
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            path1 = @path12.Replace(@"\", "/");
+            path12 = @path12.Replace(@"\", "/");
             Process.Start(path12);
         }
         #endregion
