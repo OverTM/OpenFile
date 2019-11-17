@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;//Mutex相关
 
 namespace OpenFile
 {
@@ -28,10 +29,18 @@ namespace OpenFile
             //判断当前登录用户是否为管理员
             if (principal.IsInRole(System.Security.Principal.WindowsBuiltInRole.Administrator))
             {
-                //如果是管理员，则直接运行
-
-                Application.EnableVisualStyles();
-                Application.Run(new Form1());
+                //如果是管理员，则判断该程序是否已经在运行，防止重复运行
+                bool bCreatedNew;
+                Mutex m = new Mutex(false, "Product_Index_Cntvs", out bCreatedNew);
+                if (bCreatedNew)
+                {
+                    Application.EnableVisualStyles();
+                    Application.Run(new Form1());
+                }
+                else
+                {
+                    MessageBox.Show("该程序已经在运行，按‘Ctrl+空格’即可显示");
+                }
             }
             else
             {

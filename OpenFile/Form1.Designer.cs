@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.button2 = new System.Windows.Forms.Button();
@@ -53,6 +54,12 @@
             this.contextMenuStrip11 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.button12 = new System.Windows.Forms.Button();
             this.contextMenuStrip12 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.notifyContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.打开ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.最小化ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.退出ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.notifyContextMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -62,9 +69,11 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(146, 46);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1(&1)";
+            this.button1.Text = "①" + Settings.Default.filename1;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
             // 
             // contextMenuStrip1
             // 
@@ -79,9 +88,10 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(146, 46);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2(&2)";
+            this.button2.Text = "②" + Settings.Default.filename2;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
             // 
             // contextMenuStrip2
             // 
@@ -96,9 +106,10 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(146, 46);
             this.button3.TabIndex = 2;
-            this.button3.Text = "button3(&3)";
+            this.button3.Text = "③" + Settings.Default.filename3;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.MouseEnter += new System.EventHandler(this.button3_MouseEnter);
             // 
             // contextMenuStrip3
             // 
@@ -113,9 +124,10 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(146, 46);
             this.button4.TabIndex = 3;
-            this.button4.Text = "button4(&4)";
+            this.button4.Text = "④" + Settings.Default.filename4;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
             // 
             // contextMenuStrip4
             // 
@@ -130,9 +142,10 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(146, 46);
             this.button5.TabIndex = 4;
-            this.button5.Text = "button5(&5)";
+            this.button5.Text = "⑤" + Settings.Default.filename5;
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.MouseEnter += new System.EventHandler(this.button5_MouseEnter);
             // 
             // contextMenuStrip5
             // 
@@ -147,9 +160,10 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(146, 46);
             this.button6.TabIndex = 5;
-            this.button6.Text = "button6(&6)";
+            this.button6.Text = "⑥" + Settings.Default.filename6;
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.button6.MouseEnter += new System.EventHandler(this.button6_MouseEnter);
             // 
             // contextMenuStrip6
             // 
@@ -164,9 +178,10 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(146, 46);
             this.button7.TabIndex = 6;
-            this.button7.Text = "button7(&7)";
+            this.button7.Text = "⑦" + Settings.Default.filename7;
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.button7.MouseEnter += new System.EventHandler(this.button7_MouseEnter);
             // 
             // contextMenuStrip7
             // 
@@ -181,9 +196,10 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(146, 46);
             this.button8.TabIndex = 7;
-            this.button8.Text = "button8(&8)";
+            this.button8.Text = "⑧" + Settings.Default.filename8;
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.MouseEnter += new System.EventHandler(this.button8_MouseEnter);
             // 
             // contextMenuStrip8
             // 
@@ -198,9 +214,10 @@
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(146, 46);
             this.button9.TabIndex = 8;
-            this.button9.Text = "button9(&9)";
+            this.button9.Text = "⑨" + Settings.Default.filename9;
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.button9.MouseEnter += new System.EventHandler(this.button9_MouseEnter);
             // 
             // contextMenuStrip9
             // 
@@ -215,9 +232,10 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(146, 46);
             this.button10.TabIndex = 9;
-            this.button10.Text = "button10(&10)";
+            this.button10.Text = "Ⓐ" + Settings.Default.filename10;
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button10.MouseEnter += new System.EventHandler(this.button10_MouseEnter);
             // 
             // contextMenuStrip10
             // 
@@ -232,9 +250,10 @@
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(146, 46);
             this.button11.TabIndex = 10;
-            this.button11.Text = "button11(&11)";
+            this.button11.Text = "Ⓑ" + Settings.Default.filename11;
             this.button11.UseVisualStyleBackColor = true;
             this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.button11.MouseEnter += new System.EventHandler(this.button11_MouseEnter);
             // 
             // contextMenuStrip11
             // 
@@ -249,9 +268,10 @@
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(146, 46);
             this.button12.TabIndex = 11;
-            this.button12.Text = "button12(&12)";
+            this.button12.Text = "Ⓒ" + Settings.Default.filename12;
             this.button12.UseVisualStyleBackColor = true;
             this.button12.Click += new System.EventHandler(this.button12_Click);
+            this.button12.MouseEnter += new System.EventHandler(this.button12_MouseEnter);
             // 
             // contextMenuStrip12
             // 
@@ -259,11 +279,49 @@
             this.contextMenuStrip12.Size = new System.Drawing.Size(61, 4);
             this.contextMenuStrip12.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip12_Opening);
             // 
+            // notifyIcon
+            // 
+            this.notifyIcon.ContextMenuStrip = this.notifyContextMenuStrip;
+            this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
+            this.notifyIcon.Text = "OpenFile";
+            this.notifyIcon.Visible = true;
+            this.notifyIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon_MouseClick);
+            // 
+            // notifyContextMenuStrip
+            // 
+            this.notifyContextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.打开ToolStripMenuItem,
+            this.最小化ToolStripMenuItem,
+            this.退出ToolStripMenuItem});
+            this.notifyContextMenuStrip.Name = "notifyContextMenuStrip";
+            this.notifyContextMenuStrip.Size = new System.Drawing.Size(113, 70);
+            // 
+            // 打开ToolStripMenuItem
+            // 
+            this.打开ToolStripMenuItem.Name = "打开ToolStripMenuItem";
+            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.打开ToolStripMenuItem.Text = "打开";
+            this.打开ToolStripMenuItem.Click += new System.EventHandler(this.打开ToolStripMenuItem_Click);
+            // 
+            // 最小化ToolStripMenuItem
+            // 
+            this.最小化ToolStripMenuItem.Name = "最小化ToolStripMenuItem";
+            this.最小化ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.最小化ToolStripMenuItem.Text = "最小化";
+            this.最小化ToolStripMenuItem.Click += new System.EventHandler(this.最小化ToolStripMenuItem_Click);
+            // 
+            // 退出ToolStripMenuItem
+            // 
+            this.退出ToolStripMenuItem.Name = "退出ToolStripMenuItem";
+            this.退出ToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
+            this.退出ToolStripMenuItem.Text = "退出";
+            this.退出ToolStripMenuItem.Click += new System.EventHandler(this.退出ToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 196);
+            this.ClientSize = new System.Drawing.Size(446, 196);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
@@ -276,9 +334,15 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "OpenFile";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.notifyContextMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -309,7 +373,11 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip11;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip12;
-
+        private System.Windows.Forms.NotifyIcon notifyIcon;
+        private System.Windows.Forms.ContextMenuStrip notifyContextMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem 打开ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 最小化ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 退出ToolStripMenuItem;
     }
 }
 
